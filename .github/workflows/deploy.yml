@@ -22,11 +22,13 @@ jobs:
         run: hugo --minify --gc
 
       - name: Creatte wrangler.toml with name=blog and bucket=public
-        run: wrangler init --site blog
-        run: sed -i 's/bucket = ""/bucket = "public"/g' wrangler.toml
-        run: export CF_API_TOKEN=${{ secrets.CF_API_TOKEN }}
-        run: sed -i 's/account_id = ""/account_id = "'$CF_API_TOKEN'"/g' wrangler.toml
-        run: echo wrangler.toml
+        env:
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
+        run: |
+        wrangler init --site blog
+        sed -i 's/bucket = ""/bucket = "public"/g' wrangler.toml
+        sed -i 's/account_id = ""/account_id = "'$CF_API_TOKEN'"/g' wrangler.toml
+        echo wrangler.toml
 
       - name: config wrangler
         # run: CF_API_TOKEN=${{ secrets.CF_API_TOKEN }} wrangler publish
