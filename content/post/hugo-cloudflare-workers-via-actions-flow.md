@@ -16,10 +16,7 @@ sed -i 's/bucket = ""/bucket = "public"/g' wrangler.toml
 ```bash
 name: Deploy to CF Workers
 
-on:
-  push:
-    branches:
-      - 'content/*'
+on: [push]
 
 jobs:
   build:
@@ -41,7 +38,6 @@ jobs:
         env:
           CF_API_TOKEN: ${{ secrets.CF_API_TOKEN }}
         run: |
-          echo $CF_API_TOKEN
           wrangler init --site blog
           sed -i 's/bucket = ""/bucket = "public"/g' wrangler.toml
           sed -i 's/account_id = ""/account_id = "'$CF_API_TOKEN'"/g' wrangler.toml
