@@ -24,3 +24,5 @@ jobs:
           preCommands: echo "*** pre command ***"
           postCommands: |
             echo "*** post commands ***"
+            wrangler build
+            echo "******"

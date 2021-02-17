@@ -5,5 +5,4 @@ articles/node_modules/
 public/
 dist/
 .deploy*/*.txt
-wrangler.toml
-wrangler-.toml
+
