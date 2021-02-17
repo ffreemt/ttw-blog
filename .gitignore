@@ -6,3 +6,4 @@ public/
 dist/
 .deploy*/*.txt
 wrangler.toml
+wrangler-.toml

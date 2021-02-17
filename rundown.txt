@@ -1,0 +1,3 @@
+hugo --minify --gc 
+wrangler build 
+wrangler publish 
