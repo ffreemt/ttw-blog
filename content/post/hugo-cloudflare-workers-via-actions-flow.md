@@ -76,4 +76,4 @@ References
 
 *   [https://blog.samrhea.com/posts/2019/workers-github-deploy](https://blog.samrhea.com/posts/2019/workers-github-deploy)
 
-https://blog.samrhea.com/posts/2019/workers-github-deploy
+*   https://blog.samrhea.com/posts/2019/workers-github-deploy
