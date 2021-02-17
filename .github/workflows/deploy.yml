@@ -1,9 +1,6 @@
 name: Deploy to CF Workers
 
-on:
-  push:
-    branches:
-      - 'content/*'
+on: [push]
 
 jobs:
   build:
