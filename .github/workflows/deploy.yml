@@ -32,4 +32,4 @@ jobs:
           echo wrangler.toml
 
       - name: config wrangler # run: CF_API_TOKEN=${{ secrets.CF_API_TOKEN }} wrangler publish
-        run wrangler publish
+        run: wrangler publish
