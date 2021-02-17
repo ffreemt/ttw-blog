@@ -49,6 +49,18 @@ jobs:
           wrangler publish
 ```
 
+```bash
+
+      - name: Creatte wrangler.toml with name=blog and bucket=public
+        run: |
+          wrangler init --site blog
+          sed -i 's/bucket = ""/bucket = "public"/g' wrangler.toml
+          sed -i 's/account_id = ""/account_id = "'$CF_API_TOKEN'"/g' wrangler.toml
+          echo wrangler.toml
+
+      - name: config wrangler # run: CF_API_TOKEN=${{ secrets.CF_API_TOKEN }} wrangler publish
+```
+
 # [https://developers.cloudflare.com/workers/cli-wrangler/configuration](https://developers.cloudflare.com/workers/cli-wrangler/configuration)
 ```
 
