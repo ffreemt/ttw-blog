@@ -1,0 +1,8 @@
+*.bat
+*.log
+node_modules/
+articles/node_modules/
+public/
+dist/
+.deploy*/*.txt
+wrangler.toml

@@ -1,0 +1,56 @@
+baseURL = "https://blog.ttw.workers.dev/"
+languageCode = "en-us"
+title = "Carpe Noctem"
+theme = "minimal"
+
+[params]
+    author = "mu"
+    description = "Random and not so random notes etc."
+    githubUsername = "ffreemt"
+    accent = "red"
+    showBorder = true
+    backgroundColor = "white"
+    font = "Raleway" # should match the name on Google Fonts!
+    highlight = true
+    highlightStyle = "default"
+    highlightLanguages = ["python", "javascript", "go"]
+
+[[menu.main]]
+    url = "/"
+    name = "Home"
+    weight = 1
+
+[[menu.main]]
+    url = "/post/"
+    name = "Posts"
+    weight = 3
+
+[[menu.main]]
+    url = "/project/"
+    name = "Projects"
+    weight = 4
+
+[[menu.main]]
+    url = "/about/"
+    name = "About"
+    weight = 5
+
+[[menu.icon]]
+    url = "https://corpus.ttw.workers.dev/"
+    name = "fab fa-cloudflare"
+    weight = 1
+
+[[menu.icon]]
+    url = "https://github.com/ffreemt/"
+    name = "fab fa-github"
+    weight = 2
+
+[[menu.icon]]
+    url = "https://jq.qq.com/?_wv=1027&k=lLSFE4t"
+    name = "fab fa-qq"
+    weight = 2
+
+[[menu.icon]]
+    url = "mailto:41947782@qq.com"
+    name = "fas fa-envelope"
+    weight = 3
