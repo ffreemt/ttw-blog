@@ -5,8 +5,8 @@ draft: false
 ---
 
 ## 步骤
-*   设置好cloudflare的workers。
-*   Fork这个库
+*   设置好cloudflare的workers
+*   Fork这个库： [https://github.com/ffreemt/ttw-blog](https://github.com/ffreemt/ttw-blog)
 *   设置库的Secrets：
     * Name: `CF_API_TOKEN`
     * Value: `~/.wrangler/config/default.toml`或`%userprofile%\.wrangler\conf
